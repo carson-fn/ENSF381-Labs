@@ -1,0 +1,39 @@
+body{
+
+    margin: 0;
+    padding: 0;
+}
+
+.table2{
+
+    padding: 20px;
+}
+
+.box1 { background-color: darkred;}
+.box2 { background-color: deeppink;}
+.box3 { background-color: brown;}
+
+.box_text_color{
+
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+
+.td_image_width{
+
+    width: 570px;
+}
+
+.td_image_width img{
+
+    width: 570px;
+    height: 400px;
+}
+
+p {
+
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: #3d3d3d;
+}
