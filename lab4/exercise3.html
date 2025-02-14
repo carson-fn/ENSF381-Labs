@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>lab4ex3</title>
+    <script>
+        let classRoster = ["Alice", "Tom", "Charlie", "Diana", "Evan"]
+        console.log(classRoster.toString())
+        console.log(classRoster)
+        classRoster.push("Fiona")
+        classRoster.push("Nancy")
+        classRoster.shift()
+        console.log(classRoster)
+        console.log(classRoster.length)
+
+        let classInfo = {
+            className: "ENSF381: Full-Stack Web Development",
+            instructor: "Dr. Smith",
+            students: classRoster,
+
+            details: {
+                semester: "Winter",
+                year: 2025
+            },
+
+            schedule: ["Monday", "Wednesday", "Friday"]
+        }
+
+        classInfo.instructor = "Dr. Deb"
+        console.log(classInfo.className)
+        console.log(classInfo.instructor)
+        console.log(classInfo.students)
+        console.log(classInfo.details.semester)
+        console.log(classInfo)
+
+        let {className, students} = classInfo
+        console.log(className)
+        console.log(students)
+
+        let {semester, year} = classInfo.details
+        console.log(semester)
+        console.log(year)
+
+        let [student1, student2, ...remainingStudents] = classInfo.students
+        console.log(student1)
+        console.log(student2)
+        console.log(remainingStudents)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
