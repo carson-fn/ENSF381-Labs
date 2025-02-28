@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Lab5 - Exercise 1</title>
+    </head>
+    <body>
+        <input type="text" id="textInput" placeholder="Type something here..."/>
+        <label id="textLabel"></label>
+        <button id="redButton">Red</button>
+        <button id="blueButton">Blue</button>
+        <button id="greenButton">Green</button>
+        <button id="orangeButton">Orange</button>
+        <button id="purpleButton">Purple</button>
+    </body>
+    <script type="text/javascript">
+
+    textBox = document.getElementById("textInput");
+    label = document.getElementById("textLabel");
+
+    redButton = document.getElementById("redButton");
+    blueButton = document.getElementById("blueButton");
+    greenButton = document.getElementById("greenButton");
+    orangeButton = document.getElementById("orangeButton");
+    purpleButton = document.getElementById("purpleButton");
+
+    function enterPressed(){
+        if(event.key == 'Enter'){
+            label.textContent = textBox.value
+            textBox.value = ""
+        }
+    }
+
+    function changeColour(colour){
+        label.style.color = colour
+        console.log("label colour changed")
+    }
+
+    
+
+    textBox.addEventListener('keydown', enterPressed);
+
+    redButton.addEventListener('click', function(){changeColour("red")})
+    blueButton.addEventListener('click', function(){changeColour("blue")})
+    greenButton.addEventListener('click', function(){changeColour("green")})
+    orangeButton.addEventListener('click', function(){changeColour("orange")})
+    purpleButton.addEventListener('click', function(){changeColour("purple")})
+
+
+    
+    </script>
+</html>
